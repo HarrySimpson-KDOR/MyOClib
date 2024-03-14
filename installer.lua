@@ -17,6 +17,7 @@ if #args == 0 then
     print("Usage: ./installer list -> list of systems")
     print("Usage: ./installer update -> list of systems")
     return
+end
 elseif #args == 2 then
     system = args[1]
     branch = "main"
