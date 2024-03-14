@@ -41,6 +41,7 @@ elseif #args == 1 then
         print("missing arguments")
         return
     end
+end
 else
     print("missing arguments")
     return
