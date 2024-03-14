@@ -2,7 +2,6 @@ local shell = require("shell")
 local filesystem = require("filesystem")
 local args = {...}
 local scripts = {
-
 }
 
 local function exists(filename)
