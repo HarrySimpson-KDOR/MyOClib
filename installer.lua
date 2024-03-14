@@ -15,15 +15,8 @@ local system
 if #args == 0 then
     print("Usage: ./installer [system] [location] [branch==main]")
     print("Usage: ./installer list -> list of systems")
-    print("Usage: ./installer update -> list of systems")
+    print("Usage: ./installer update -> update the installer")
     return
-end
-elseif #args == 2 then
-    system = args[1]
-    branch = "main"
-elseif #args == 3 then
-    system = args[1]
-    branch = args[2]
 elseif #args == 1 then
     if args[1] == "list" then
         print("List of systems")
@@ -31,21 +24,25 @@ elseif #args == 1 then
             print(systems[i])
         end
         return
-    end
     elseif args[1] == "update" then
         print("Updating installer")
         shell.execute("wget -f https://raw.githubusercontent.com/HarrySimpson-KDOR/MyOClib/main/installer.lua")
         return
-    end    
     else
-        print("missing arguments")
+        print("Invalid argument. Use 'list' or 'update'.")
         return
     end
-end
+elseif #args == 2 then
+    system = args[1]
+    branch = "main"
+elseif #args == 3 then
+    system = args[1]
+    branch = args[2]
 else
-    print("missing arguments")
+    print("Incorrect number of arguments.")
     return
 end
+
 
 --change to the location directory
 shell.setWorkingDirectory(args[2])
