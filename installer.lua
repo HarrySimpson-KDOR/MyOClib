@@ -43,6 +43,8 @@ else
     return
 end
 
+
+local currentDir = shell.getWorkingDirectory()
 --change to the location directory
 shell.setWorkingDirectory(args[2])
 
@@ -51,6 +53,8 @@ shell.execute("wget -f https://raw.githubusercontent.com/HarrySimpson-KDOR/MyOCl
 
 shell.execute("installer.lua "..branch)
 
+--change back to the original directory
+shell.setWorkingDirectory(currentDir)
 
 -- wget -f https://raw.githubusercontent.com/HarrySimpson-KDOR/MyOClib/main/installer.lua
 
