@@ -7,8 +7,10 @@ local files = {
     "autorun.lua",
     "run.lua"
 }
-for i=1, #files do
-    shell.execute("rm "..files[i])
+--get all files in the current directory and remove them
+local currentFiles = shell.execute("ls")
+for i=1, #currentFiles do
+    shell.execute("rm "..currentFiles[i])
 end
 
 for i=1, #files do
