@@ -2,7 +2,7 @@ local system = "CCBuilderSimple"
 local args = {...} 
 local branch = args[1]
 local files = {
-    "client.lua",
+    "demo.lua",
     "autorun.lua",
     "setup.lua"
 }
