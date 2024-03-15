@@ -10,7 +10,7 @@ local files = {
 --get all files in the current directory and remove them
 local currentFiles = shell.execute("ls")
 for i=1, #currentFiles do
-    shell.execute("rm "..currentFiles[i])
+    print(currentFiles[i])
 end
 
 for i=1, #files do
