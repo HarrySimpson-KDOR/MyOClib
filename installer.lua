@@ -2,7 +2,7 @@ local shell = require("shell")
 local filesystem = require("filesystem")
 local args = {...} 
 local systems = {
-    "CCBuilder",
+    "CCBuilderSimple",
 }
 
 local function exists(filename)
