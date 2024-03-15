@@ -47,9 +47,8 @@ end
 shell.setWorkingDirectory(args[2])
 
 --download the files
-shell.execute("wget -f https://raw.githubusercontent.com/HarrySimpson-KDOR/MyOClib/"..branch.."/"..system.."/install.lua")
+shell.execute("wget -f https://raw.githubusercontent.com/HarrySimpson-KDOR/MyOClib/"..branch.."/"..system.."/installer.lua")
 
-run the install file
 shell.execute("install.lua")
 
 
