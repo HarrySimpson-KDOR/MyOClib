@@ -15,7 +15,7 @@ local threedCube =
     },
     {
         {1,1,1},
-        {1,1,1},
+        {1,2,1},
         {1,1,1}
     },
     {
@@ -73,10 +73,10 @@ end
 buildCube()
 --return to the starting position
 r.turnRight()
-for i=1,3 do
+for i=1,4 do
     r.forward()
 end
 r.turnRight()
-for i=1,4 do
+for i=1,3 do
     r.forward()
 end
