@@ -1,4 +1,5 @@
 local system = "CCBuilderSimple"
+local shell = require("shell")
 local args = {...} 
 local branch = args[1]
 local files = {

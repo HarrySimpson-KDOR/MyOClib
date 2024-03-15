@@ -24,6 +24,9 @@ local threedCube =
         {1,1,1}
     }
 }
+print(threedCube)
+--wait 10 sec
+os.sleep(10)
 
 r.turnLeft()
 r.turnLeft()
@@ -61,7 +64,7 @@ end
 local function buildCube()
     for column=1,3 do
         buildFullColumn(4-column)
-        r.reverse()
+        r.back()
         for i=1,3 do
             r.down()
         end
