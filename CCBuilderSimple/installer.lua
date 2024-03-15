@@ -9,9 +9,7 @@ local files = {
 }
 --get all files in the current directory and remove them
 local currentFiles = shell.execute("ls")
-for i=1, #currentFiles do
-    print(currentFiles[i])
-end
+print(currentFiles)
 
 for i=1, #files do
     shell.execute("wget -f --r --np https://raw.githubusercontent.com/HarrySimpson-KDOR/MyOClib/"..branch.."/"..system.."/"..files[i])
