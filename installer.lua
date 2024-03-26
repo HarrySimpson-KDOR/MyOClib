@@ -58,4 +58,3 @@ shell.setWorkingDirectory(currentDir)
 
 -- wget -f https://raw.githubusercontent.com/HarrySimpson-KDOR/MyOClib/main/installer.lua
 
--- wget --r --np -f https://raw.githubusercontent.com/HarrySimpson-KDOR/MyOClib/main/
